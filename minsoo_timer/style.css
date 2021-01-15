@@ -1,0 +1,19 @@
+body {
+	background-image: url("./nightscene.jpg");
+	background-position:center bottom;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.counter {
+	color: white;
+	text-align: center;
+	font-size: 3vw;
+	font-family:Helvetica;
+}
+
+.counter_box {
+	margin-left:1rem; 
+	margin-right:1rem;
+}
