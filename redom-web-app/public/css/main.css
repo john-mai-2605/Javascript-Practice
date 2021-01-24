@@ -1,1 +1,13 @@
-body{font-family:sans-serif;padding:1.5rem}
+body{
+    font-family:sans-serif;
+    padding:1.5rem;
+    background-image: url("./newyear.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}

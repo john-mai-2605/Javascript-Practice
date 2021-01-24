@@ -1,24 +1,12 @@
 import { el } from 'redom';
 import { dispatch } from './dispatch';
-import { Hello } from './hello';
+import { Counter } from './counter';
 
 export class App {
   constructor () {
     this.el = el('.app',
-      this.hello = new Hello(),
-      this.input = el('input', {
-        autofocus: true,
-        oninput: e => dispatch(this, 'hello', this.input.value),
-        placeholder: 'RE:DOM'
-      })
+      this.counter = new Counter(),
     );
-    this.data = {};
-  }
-  update (data) {
-    const { hello } = data;
-
-    this.hello.update(hello);
-
-    this.data = data;
+    setInterval(this.counter.count, 1000)
   }
 }
