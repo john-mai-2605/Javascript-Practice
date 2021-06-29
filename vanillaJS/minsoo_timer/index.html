@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Minsoo Timer</title>
+	<link rel="stylesheet" href="style.css"/>
+	
+	<!--
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#datepicker" ).datepicker();
+	} );
+	</script>
+	-->
+</head>
+
+<body>
+	<!--
+	
+	<div style="position:absolute; left:50%; transform: translate(-50%,0);">
+		<input type="text" id="datepicker"/>
+	</div>
+	-->
+	<div style="display:flex; position:absolute; top:40%; left:50%; transform: translate(-50%,-50%);" class="counter"> 
+		<div class="counter_box">
+			<h2>Day</h2>
+			<h1 id="day_counter"></h1>
+		</div>
+		<div class="counter_box">
+			<h2>Hour</h2>
+			<h1 id="hour_counter"></h1>
+		</div>
+		<div class="counter_box">
+			<h2>Minute</h2>
+			<h1 id="minute_counter"></h1>
+		</div>
+		<div class="counter_box">
+			<h2>Second</h2>
+			<h1 id="second_counter"></h1>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
