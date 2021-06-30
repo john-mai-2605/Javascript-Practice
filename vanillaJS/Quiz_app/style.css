@@ -1,0 +1,22 @@
+.web_header{
+    text-align: center;
+}
+
+.quiz-container{
+    border: 7px solid #ffc128;
+    background-color: #0f4c81;
+    color: white;
+    text-align: center;
+    width: 12em;
+    height: 12em;
+    margin: auto;
+    position:relative;
+}
+
+.the-quiz{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

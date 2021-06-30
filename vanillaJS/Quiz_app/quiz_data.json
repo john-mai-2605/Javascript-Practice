@@ -1,0 +1,29 @@
+quiz_data = '[\
+    { \
+        "question" : "What is 1 + 1", \
+        "ans" : "2", \
+        "opt1" : "4",\
+        "opt2" : "5",\
+        "opt3" : "6",\
+        "opt4" : "1",\
+        "opt5" : "0",\
+        "score" : 3 }, \
+    {\
+        "question" : "Who is the #1 YouTuber", \
+        "ans" : "PewDiePie", \
+        "opt1" : "Mr.Beast", \
+        "opt2" : "JackSepticEye", \
+        "opt3" : "CinemaToastKen", \
+        "opt4" : "MKBHD", \
+        "opt5" : "Unbox Therapy", \
+        "score" : 10 \
+    }, { \
+        "question" : "Who created the BitCoin", \
+        "ans" : "Satoshi Nakamoto", \
+        "opt1" : "Yamada Otake", \
+        "opt2" : "Miyazaki Hayao", \
+        "opt3" : "Jim Browning", \
+        "opt4" : "Harley Smith", \
+        "opt5" : "Shigeru Miyamoto", \
+        "score" : 1 \
+    }]';
