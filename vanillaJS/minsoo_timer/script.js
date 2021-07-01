@@ -1,6 +1,6 @@
 var i=0;
 
-var target_date = new Date(2020,11, 28, 20, 00, 00);
+var target_date = new Date(2020, 11, 30, 20, 00, 00);
 
 function count(){
 	const day_counter = document.getElementById("day_counter");

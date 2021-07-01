@@ -1,8 +1,8 @@
-.web_header{
+.pageHeader{
     text-align: center;
 }
 
-.quiz-container{
+.quizContainer{
     border: 7px solid #ffc128;
     background-color: #0f4c81;
     color: white;
@@ -13,7 +13,7 @@
     position:relative;
 }
 
-.the-quiz{
+.theQuiz{
     margin: 0;
     position: absolute;
     top: 50%;
