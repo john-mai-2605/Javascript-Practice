@@ -4,7 +4,7 @@ quiz_data = '[\
         "ans" : "2", \
         "opt1" : "4",\
         "opt2" : "5",\
-        "opt3" : "6",\
+        "opt3" : "2",\
         "opt4" : "1",\
         "opt5" : "0",\
         "score" : 3 }, \
@@ -12,15 +12,15 @@ quiz_data = '[\
         "question" : "Who is the #1 YouTuber?", \
         "ans" : "PewDiePie", \
         "opt1" : "Mr.Beast", \
-        "opt2" : "JackSepticEye", \
-        "opt3" : "CinemaToastKen", \
+        "opt2" : "Jack Septic Eye", \
+        "opt3" : "Cinema Toast Ken", \
         "opt4" : "MKBHD", \
-        "opt5" : "Unbox Therapy", \
+        "opt5" : "PewDiePie", \
         "score" : 10 \
     }, { \
         "question" : "Who created the BitCoin?", \
         "ans" : "Satoshi Nakamoto", \
-        "opt1" : "Yamada Otake", \
+        "opt1" : "Satoshi Nakamoto", \
         "opt2" : "Miyazaki Hayao", \
         "opt3" : "Jim Browning", \
         "opt4" : "Harley Smith", \

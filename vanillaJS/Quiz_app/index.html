@@ -8,15 +8,20 @@
         <link rel="stylesheet" href="style.css">
         <title>Simple Quiz</title>
     </head>
-    <body onload = "open_json(quiz_data)">
+    <body onload = "openJson(quiz_data)">
         <div>
             <h1 class="pageHeader">Minsoo's Simple Quiz!</h1>
         </div>
-        <div class="quizContainer">
-            <div class="theQuiz">
-                <div id="question"></div>
-                <button onclick="">Check</button>
+        <div class="theQuiz">
+            <div id="question"></div>
+            <div class="optionsContainer">
+                <input type="radio" name="answers" id="opt1" /><label for="opt1" id="option1"></label><br>
+                <input type="radio" name="answers" id="opt2" /><label for="opt2" id="option2"></label><br>
+                <input type="radio" name="answers" id="opt3" /><label for="opt3" id="option3"></label><br>
+                <input type="radio" name="answers" id="opt4" /><label for="opt4" id="option4"></label><br>
+                <input type="radio" name="answers" id="opt5" /><label for="opt5" id="option5"></label><br>
             </div>
+            <button onclick="checkAnswer()">Check</button>
         </div>
     </body>
 </html>

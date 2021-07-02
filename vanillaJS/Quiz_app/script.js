@@ -1,24 +1,48 @@
 var data;
-var number_quiz;
-var shown_quiz = [];
-var testing = 3;
+var numberOfQuiz;
+var shownQuiz = [];
+var score = 0;
+var questionNo;
 
-function open_json(json_string) {
+function openJson(json_string) {
     data = JSON.parse(json_string);
-    number_quiz = Object.keys(data).length;
-    select_quiz();
+    numberOfQuiz = Object.keys(data).length;
+    newQuiz();
 }
 
-function select_quiz(){
-    var included;
-    var draw;
+function checkAnswer(){
+    var userans = document.getElementsByName("answers").value;
+    var howaboutthis = document.querySelector('input[name="answers"]:checked').value;
+    var corrans = data[questionNo].ans;
+    if( howaboutthis == corrans ){
+        score += data[questionNo].score;
+    }else{
+        alert("Wrong answer"+score);
+    }
+    newQuiz();
+}
+
+function newQuiz(){
+    var shown;
+    if(shownQuiz.length === data.length){
+        shownQuiz = [];
+        alert("Cycled all questions!")
+    }
     do{
-        draw = Math.floor(Math.random()*number_quiz);
-        shown = shown_quiz.includes(draw);
+        questionNo = Math.floor(Math.random()*numberOfQuiz);
+        shown = shownQuiz.includes(questionNo);
     }while(shown)
-    let number_shown = shown_quiz.length;
-    shown_quiz[number_shown] = draw;
-    document.getElementById("question").innerHTML = data[draw].question;
-    debugger;
-    
+    let numberShown = shownQuiz.length;
+    shownQuiz[numberShown] = questionNo;
+    document.getElementById("question").innerHTML = data[questionNo].question;
+    document.getElementById("option1").innerHTML = data[questionNo].opt1;
+    document.getElementById("opt1").value = data[questionNo].opt1;
+    document.getElementById("option2").innerHTML = data[questionNo].opt2;
+    document.getElementById("opt2").value = data[questionNo].opt2;
+    document.getElementById("option3").innerHTML = data[questionNo].opt3;
+    document.getElementById("opt3").value = data[questionNo].opt3;
+    document.getElementById("option4").innerHTML = data[questionNo].opt4;
+    document.getElementById("opt4").value = data[questionNo].opt4;
+    document.getElementById("option5").innerHTML = data[questionNo].opt5;
+    document.getElementById("opt5").value = data[questionNo].opt5;
 }
